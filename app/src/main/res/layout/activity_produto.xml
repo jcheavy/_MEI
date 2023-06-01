@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sec"
+    tools:context=".activities.ProdutoActivity">
+
+    <TextView
+        android:id="@+id/title_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produto"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="12dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linLayoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Produto"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edtIdProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="Id"
+            android:inputType="text|number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtNomeProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/nome"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtMarcaProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/marca"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtModeloProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/modelo"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtPrecoProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/preco"
+            android:inputType="text|numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/edtQuantProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/quant"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linLayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayoutPrincipal"
+        android:gravity="center">
+        <GridLayout
+            android:id="@+id/gridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btEditarProd"
+                android:layout_width="156dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Cancelar"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="5dp"
+                ></Button>
+            <Button
+                android:id="@+id/btSalvaProd"
+                android:layout_width="156dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="@string/salvar"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                ></Button>
+
+        </GridLayout>
+
+    </LinearLayout>
+</RelativeLayout>

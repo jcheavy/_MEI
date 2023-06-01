@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MEI</string>
+
+    <string name="nome">Nome</string>
+    <string name="rua">Rua</string>
+    <string name="num">Numero</string>
+    <string name="cidade">Cidade</string>
+    <string name="tel">Telefone</string>
+    <string name="Home">Home</string>
+    <string name="preco">Preço</string>
+    <string name="quant">Quantidade</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+
+    <string name="cli">Cliente</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cadastros">Cadastros</string>
+    <string name="prod">Produto</string>
+    <string name="servicos">Serviços</string>
+    <string name="Venda">Venda</string>
+    <string name="nota">Notas</string>
+    <string name="sair">Sair</string>
+    <string name="salvar">Salvar</string>
+
+</resources>

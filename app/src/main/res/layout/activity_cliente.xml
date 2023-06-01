@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sec"
+    tools:context=".activities.ClienteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/EditTexNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/nome"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/EditTextRua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/rua"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/EditTextCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/cidade"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/EditTextNumero"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/num"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/EditTextTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_input_field"
+            android:drawablePadding="5dp"
+            android:hint="@string/tel"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/linLayoutClibutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp">
+
+            <Button
+                android:id="@+id/btEditarCli"
+                android:layout_width="156dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:text="Cancelar"></Button>
+
+            <Button
+                android:id="@+id/btSalvarCli"
+                android:layout_width="156dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Salvar"
+                android:textSize="16sp">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
